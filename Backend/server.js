@@ -43,6 +43,8 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
+app.use(cors({ origin: "https://eco-dashboard-five.vercel.app/" }));
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
