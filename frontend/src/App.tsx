@@ -40,7 +40,7 @@ import {
 import { SimpleEcoCharts } from './SimpleCharts';
 
 function sendMessageToAI(message) {
-  return fetch('http://localhost:5000/api/chat', {
+  return fetch('https://ecotracker-4.onrender.com/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message }),
